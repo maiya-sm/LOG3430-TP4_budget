@@ -18,6 +18,6 @@ jobs:
       - name: Setup Git Bisect
         run: git bisect start ${{ secrets.BAD_HASH }} ${{ secrets.GOOD_HASH }}
       - name: Run git bisect with myscript.py
-        run: python .github/workflows/myscript.py/myscript.py
+        run: python .github/workflows/myscript.py
       - name: Reset Git Bisect
         run: git bisect reset
